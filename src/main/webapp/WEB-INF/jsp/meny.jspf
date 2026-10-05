@@ -1,0 +1,11 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib uri="jakarta.tags.core" prefix="c" %>
+<p>
+    Inloggad som <b><c:out value="${anvandare.anvandarnamn}"/></b> (${anvandare.roll})
+    | <a href="${pageContext.request.contextPath}/produkter">Produkter</a>
+    | <a href="${pageContext.request.contextPath}/varukorg">Varukorg</a>
+    <c:if test="${anvandare.admin}">
+        | <a href="${pageContext.request.contextPath}/admin">Administrera användare</a>
+    </c:if>
+    | <a href="${pageContext.request.contextPath}/loggaut">Logga ut</a>
+</p>

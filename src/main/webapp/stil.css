@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 6px 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+.fel {
+    color: #b00020;
+    font-weight: bold;
+}
+
+.total {
+    font-weight: bold;
+}
