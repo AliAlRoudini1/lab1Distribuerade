@@ -9,25 +9,40 @@ public class ProduktHanterare {
 
     private ProduktDB produktDB = new ProduktDB();
 
-    public ArrayList<Produkt> hamtaAllaProdukter() throws DatabasFel {
+    public ArrayList<ProduktInfo> hamtaAllaProdukter() throws DatabasFel {
+        ArrayList<Produkt> produkter;
         try {
-            ArrayList<Produkt> produkter = produktDB.hamtaAllaProdukter();
-            return produkter;
+            produkter = produktDB.hamtaAllaProdukter();
         } catch (SQLException fel) {
             throw new DatabasFel("Kunde inte hämta produkterna från databasen.", fel);
         }
+
+        ArrayList<ProduktInfo> produktInfoLista = new ArrayList<ProduktInfo>();
+        for (int i = 0; i < produkter.size(); i = i + 1) {
+            Produkt produkt = produkter.get(i);
+            ProduktInfo produktInfo = skapaProduktInfo(produkt);
+            produktInfoLista.add(produktInfo);
+        }
+        return produktInfoLista;
     }
 
-    public Produkt hamtaProdukt(int id) throws DatabasFel {
+    public ProduktInfo hamtaProdukt(int id) throws DatabasFel {
+        Produkt produkt;
         try {
-            Produkt produkt = produktDB.hamtaProdukt(id);
-            return produkt;
+            produkt = produktDB.hamtaProdukt(id);
         } catch (SQLException fel) {
             throw new DatabasFel("Kunde inte hämta produkten från databasen.", fel);
         }
+
+        if (produkt == null) {
+            return null;
+        }
+
+        ProduktInfo produktInfo = skapaProduktInfo(produkt);
+        return produktInfo;
     }
 
-    public String fyllPaLager(Anvandare anvandare, int produktId, int antal) throws DatabasFel {
+    public String fyllPaLager(AnvandareInfo anvandare, int produktId, int antal) throws DatabasFel {
         if (anvandare.getRoll() != Roll.LAGER) {
             return "Bara lagerpersonal kan fylla på lagret.";
         }
@@ -46,5 +61,11 @@ public class ProduktHanterare {
         }
 
         return null;
+    }
+
+    private ProduktInfo skapaProduktInfo(Produkt produkt) {
+        ProduktInfo produktInfo = new ProduktInfo(produkt.getId(), produkt.getNamn(), produkt.getBeskrivning(),
+                produkt.getPris(), produkt.getLagerAntal());
+        return produktInfo;
     }
 }

@@ -6,10 +6,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import se.labb1.bo.Anvandare;
+import se.labb1.bo.AnvandareInfo;
 import se.labb1.bo.DatabasFel;
-import se.labb1.bo.Produkt;
 import se.labb1.bo.ProduktHanterare;
+import se.labb1.bo.ProduktInfo;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,7 +20,9 @@ public class ProduktServlet extends HttpServlet {
     private ProduktHanterare produktHanterare = new ProduktHanterare();
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {HttpSession session = request.getSession();
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        HttpSession session = request.getSession();
 
         if (session.getAttribute("anvandare") == null) {
             response.sendRedirect(request.getContextPath() + "/loggain");
@@ -40,7 +42,7 @@ public class ProduktServlet extends HttpServlet {
         }
 
         try {
-            ArrayList<Produkt> produkter = produktHanterare.hamtaAllaProdukter();
+            ArrayList<ProduktInfo> produkter = produktHanterare.hamtaAllaProdukter();
             request.setAttribute("produkter", produkter);
         } catch (DatabasFel fel) {
             request.setAttribute("felmeddelande", fel.getMessage());
@@ -54,7 +56,7 @@ public class ProduktServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
 
-        Anvandare anvandare = (Anvandare) session.getAttribute("anvandare");
+        AnvandareInfo anvandare = (AnvandareInfo) session.getAttribute("anvandare");
         if (anvandare == null) {
             response.sendRedirect(request.getContextPath() + "/loggain");
             return;

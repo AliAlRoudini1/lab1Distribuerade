@@ -1,13 +1,15 @@
 package se.labb1.bo;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Varukorg implements Serializable {
+public class Varukorg {
 
     private ArrayList<VarukorgRad> rader = new ArrayList<VarukorgRad>();
 
     public boolean laggTill(Produkt produkt, int antal) {
+        if (antal < 1) {
+            return false;
+        }
 
         VarukorgRad befintligRad = null;
         for (int i = 0; i < rader.size(); i++) {
@@ -64,5 +66,10 @@ public class Varukorg implements Serializable {
         } else {
             return false;
         }
+    }
+
+    public void laggTillRad(Produkt produkt, int antal) {
+        VarukorgRad rad = new VarukorgRad(produkt, antal);
+        rader.add(rad);
     }
 }

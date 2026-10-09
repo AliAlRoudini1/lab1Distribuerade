@@ -18,7 +18,7 @@
 </c:if>
 
 <c:choose>
-    <c:when test="${varukorg.tom}">
+    <c:when test="${varukorgInfo.tom}">
         <p>Varukorgen är tom.</p>
     </c:when>
     <c:otherwise>
@@ -29,7 +29,7 @@
                 <th>Antal</th>
                 <th>Summa</th>
             </tr>
-            <c:forEach var="rad" items="${varukorg.rader}">
+            <c:forEach var="rad" items="${varukorgInfo.rader}">
                 <tr>
                     <td><c:out value="${rad.produkt.namn}"/></td>
                     <td>${rad.produkt.pris} kr</td>
@@ -40,8 +40,8 @@
             <tr class="total">
                 <td>Totalt</td>
                 <td></td>
-                <td>${varukorg.antalVaror}</td>
-                <td>${varukorg.totalSumma} kr</td>
+                <td>${varukorgInfo.antalVaror}</td>
+                <td>${varukorgInfo.totalSumma} kr</td>
             </tr>
         </table>
 

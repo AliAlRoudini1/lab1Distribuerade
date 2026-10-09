@@ -6,10 +6,10 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
-import se.labb1.bo.Anvandare;
+import se.labb1.bo.AnvandareInfo;
 import se.labb1.bo.DatabasFel;
 import se.labb1.bo.OrderHanterare;
-import se.labb1.bo.Varukorg;
+import se.labb1.bo.VarukorgInfo;
 
 import java.io.IOException;
 
@@ -34,6 +34,7 @@ public class OrderServlet extends HttpServlet {
         }
 
         request.getRequestDispatcher("/WEB-INF/jsp/bekraftelse.jsp").forward(request, response);
+        session.removeAttribute("senasteOrderId");
     }
 
     @Override
@@ -41,21 +42,21 @@ public class OrderServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession();
 
-        Anvandare anvandare = (Anvandare) session.getAttribute("anvandare");
+        AnvandareInfo anvandare = (AnvandareInfo) session.getAttribute("anvandare");
         if (anvandare == null) {
             response.sendRedirect(request.getContextPath() + "/loggain");
             return;
         }
 
-        Varukorg varukorg = (Varukorg) session.getAttribute("varukorg");
-        if (varukorg == null || varukorg.isTom()) {
+        VarukorgInfo varukorgInfo = (VarukorgInfo) session.getAttribute("varukorgInfo");
+        if (varukorgInfo == null || varukorgInfo.isTom()) {
             visaFelPaVarukorgssidan(request, response, "Varukorgen är tom.");
             return;
         }
 
         int orderId;
         try {
-            orderId = orderHanterare.skickaOrder(anvandare, varukorg);
+            orderId = orderHanterare.skickaOrder(anvandare, varukorgInfo);
         } catch (DatabasFel fel) {
             visaFelPaVarukorgssidan(request, response, fel.getMessage());
             return;
@@ -72,7 +73,8 @@ public class OrderServlet extends HttpServlet {
             return;
         }
 
-        session.removeAttribute("varukorg");
+        VarukorgInfo tomVarukorg = orderHanterare.skapaTomVarukorg();
+        session.setAttribute("varukorgInfo", tomVarukorg);
         session.setAttribute("senasteOrderId", orderId);
 
         response.sendRedirect(request.getContextPath() + "/order");

@@ -1,8 +1,6 @@
 package se.labb1.bo;
 
-import java.io.Serializable;
-
-public class VarukorgRad implements Serializable {
+public class VarukorgRad {
 
     private Produkt produkt;
     private int antal;

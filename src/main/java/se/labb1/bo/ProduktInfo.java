@@ -1,14 +1,16 @@
 package se.labb1.bo;
 
-public class Produkt {
+import java.io.Serializable;
 
-    private int id;
-    private String namn;
-    private String beskrivning;
-    private int pris;
-    private int lagerAntal;
+public class ProduktInfo implements Serializable {
 
-    public Produkt(int id, String namn, String beskrivning, int pris, int lagerAntal) {
+    private final int id;
+    private final String namn;
+    private final String beskrivning;
+    private final int pris;
+    private final int lagerAntal;
+
+    public ProduktInfo(int id, String namn, String beskrivning, int pris, int lagerAntal) {
         this.id = id;
         this.namn = namn;
         this.beskrivning = beskrivning;

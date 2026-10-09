@@ -10,22 +10,37 @@ public class AnvandarHanterare {
 
     private AnvandareDB anvandareDB = new AnvandareDB();
 
-    public Anvandare loggaIn(String anvandarnamn, String losenord) throws DatabasFel {
+    public AnvandareInfo loggaIn(String anvandarnamn, String losenord) throws DatabasFel {
+        Anvandare anvandare;
         try {
-            Anvandare anvandare = anvandareDB.hittaAnvandare(anvandarnamn, losenord);
-            return anvandare;
+            anvandare = anvandareDB.hittaAnvandare(anvandarnamn, losenord);
         } catch (SQLException fel) {
             throw new DatabasFel("Kunde inte kontrollera inloggningen mot databasen.", fel);
         }
+
+        if (anvandare == null) {
+            return null;
+        }
+
+        AnvandareInfo anvandareInfo = skapaAnvandareInfo(anvandare);
+        return anvandareInfo;
     }
 
-    public ArrayList<Anvandare> hamtaAllaAnvandare() throws DatabasFel {
+    public ArrayList<AnvandareInfo> hamtaAllaAnvandare() throws DatabasFel {
+        ArrayList<Anvandare> allaAnvandare;
         try {
-            ArrayList<Anvandare> anvandare = anvandareDB.hamtaAllaAnvandare();
-            return anvandare;
+            allaAnvandare = anvandareDB.hamtaAllaAnvandare();
         } catch (SQLException fel) {
             throw new DatabasFel("Kunde inte hämta användarna från databasen.", fel);
         }
+
+        ArrayList<AnvandareInfo> anvandareInfoLista = new ArrayList<AnvandareInfo>();
+        for (int i = 0; i < allaAnvandare.size(); i = i + 1) {
+            Anvandare anvandare = allaAnvandare.get(i);
+            AnvandareInfo anvandareInfo = skapaAnvandareInfo(anvandare);
+            anvandareInfoLista.add(anvandareInfo);
+        }
+        return anvandareInfoLista;
     }
 
     public void laggTillAnvandare(String anvandarnamn, String losenord, Roll roll) throws DatabasFel {
@@ -54,5 +69,11 @@ public class AnvandarHanterare {
         } catch (SQLException fel) {
             throw new DatabasFel("Kunde inte ta bort användaren.", fel);
         }
+    }
+
+    private AnvandareInfo skapaAnvandareInfo(Anvandare anvandare) {
+        AnvandareInfo anvandareInfo = new AnvandareInfo(anvandare.getId(), anvandare.getAnvandarnamn(),
+                anvandare.getRoll(), anvandare.isAdmin());
+        return anvandareInfo;
     }
 }

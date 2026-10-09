@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import se.labb1.bo.AnvandarHanterare;
-import se.labb1.bo.Anvandare;
+import se.labb1.bo.AnvandareInfo;
 import se.labb1.bo.DatabasFel;
 import se.labb1.bo.Roll;
 
@@ -34,7 +34,7 @@ public class AdminServlet extends HttpServlet {
         }
 
         try {
-            ArrayList<Anvandare> allaAnvandare = anvandarHanterare.hamtaAllaAnvandare();
+            ArrayList<AnvandareInfo> allaAnvandare = anvandarHanterare.hamtaAllaAnvandare();
             request.setAttribute("allaAnvandare", allaAnvandare);
         } catch (DatabasFel fel) {
             request.setAttribute("felmeddelande", fel.getMessage());
@@ -74,7 +74,7 @@ public class AdminServlet extends HttpServlet {
     private boolean arAdmin(HttpServletRequest request, HttpServletResponse response)
             throws IOException {
         HttpSession session = request.getSession();
-        Anvandare anvandare = (Anvandare) session.getAttribute("anvandare");
+        AnvandareInfo anvandare = (AnvandareInfo) session.getAttribute("anvandare");
 
         if (anvandare == null) {
             response.sendRedirect(request.getContextPath() + "/loggain");
@@ -123,7 +123,7 @@ public class AdminServlet extends HttpServlet {
             return "Välj en giltig roll.";
         }
 
-        Anvandare inloggad = (Anvandare) request.getSession().getAttribute("anvandare");
+        AnvandareInfo inloggad = (AnvandareInfo) request.getSession().getAttribute("anvandare");
         if (id == inloggad.getId()) {
             return "Du kan inte ändra din egen roll.";
         }
@@ -144,7 +144,7 @@ public class AdminServlet extends HttpServlet {
             return "Användaren finns inte.";
         }
 
-        Anvandare inloggad = (Anvandare) request.getSession().getAttribute("anvandare");
+        AnvandareInfo inloggad = (AnvandareInfo) request.getSession().getAttribute("anvandare");
         if (id == inloggad.getId()) {
             return "Du kan inte ta bort dig själv.";
         }

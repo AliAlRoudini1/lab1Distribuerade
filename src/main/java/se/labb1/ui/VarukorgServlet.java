@@ -7,9 +7,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import se.labb1.bo.DatabasFel;
-import se.labb1.bo.Produkt;
+import se.labb1.bo.OrderHanterare;
 import se.labb1.bo.ProduktHanterare;
-import se.labb1.bo.Varukorg;
+import se.labb1.bo.ProduktInfo;
+import se.labb1.bo.VarukorgInfo;
 
 import java.io.IOException;
 
@@ -17,6 +18,7 @@ import java.io.IOException;
 public class VarukorgServlet extends HttpServlet {
 
     private ProduktHanterare produktHanterare = new ProduktHanterare();
+    private OrderHanterare orderHanterare = new OrderHanterare();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -34,7 +36,8 @@ public class VarukorgServlet extends HttpServlet {
             session.removeAttribute("felmeddelande");
         }
 
-        hamtaVarukorg(session);
+        VarukorgInfo varukorgInfo = hamtaVarukorgInfo(session);
+        request.setAttribute("varukorgInfo", varukorgInfo);
 
         request.getRequestDispatcher("/WEB-INF/jsp/varukorg.jsp").forward(request, response);
     }
@@ -70,37 +73,39 @@ public class VarukorgServlet extends HttpServlet {
             return;
         }
 
-        Produkt produkt;
+        ProduktInfo produktInfo;
         try {
-            produkt = produktHanterare.hamtaProdukt(produktId);
+            produktInfo = produktHanterare.hamtaProdukt(produktId);
         } catch (DatabasFel fel) {
             visaFelPaProduktsidan(request, response, fel.getMessage());
             return;
         }
 
-        if (produkt == null) {
+        if (produktInfo == null) {
             visaFelPaProduktsidan(request, response, "Produkten finns inte.");
             return;
         }
 
-        Varukorg varukorg = hamtaVarukorg(session);
-        boolean lagdesTill = varukorg.laggTill(produkt, antal);
-        if (!lagdesTill) {
-            visaFelPaProduktsidan(request, response, "Det finns bara " + produkt.getLagerAntal()
-                    + " st av " + produkt.getNamn() + " i lager. Du kan inte ha fler än så i varukorgen.");
+        VarukorgInfo varukorgInfo = hamtaVarukorgInfo(session);
+        VarukorgInfo nyVarukorgInfo = orderHanterare.laggTillIVarukorg(varukorgInfo, produktInfo, antal);
+        if (nyVarukorgInfo == null) {
+            visaFelPaProduktsidan(request, response, "Det finns bara " + produktInfo.getLagerAntal()
+                    + " st av " + produktInfo.getNamn() + " i lager. Du kan inte ha fler än så i varukorgen.");
             return;
         }
+
+        session.setAttribute("varukorgInfo", nyVarukorgInfo);
 
         response.sendRedirect(request.getContextPath() + "/varukorg");
     }
 
-    private Varukorg hamtaVarukorg(HttpSession session) {
-        Varukorg varukorg = (Varukorg) session.getAttribute("varukorg");
-        if (varukorg == null) {
-            varukorg = new Varukorg();
-            session.setAttribute("varukorg", varukorg);
+    private VarukorgInfo hamtaVarukorgInfo(HttpSession session) {
+        VarukorgInfo varukorgInfo = (VarukorgInfo) session.getAttribute("varukorgInfo");
+        if (varukorgInfo == null) {
+            varukorgInfo = orderHanterare.skapaTomVarukorg();
+            session.setAttribute("varukorgInfo", varukorgInfo);
         }
-        return varukorg;
+        return varukorgInfo;
     }
 
     private void visaFelPaProduktsidan(HttpServletRequest request, HttpServletResponse response,

@@ -1,8 +1,6 @@
 package se.labb1.bo;
 
-import java.io.Serializable;
-
-public class Anvandare implements Serializable {
+public class Anvandare {
 
     private int id;
     private String anvandarnamn;

@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import se.labb1.bo.AnvandarHanterare;
-import se.labb1.bo.Anvandare;
+import se.labb1.bo.AnvandareInfo;
 import se.labb1.bo.DatabasFel;
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class LoggaInServlet extends HttpServlet {
             return;
         }
 
-        Anvandare anvandare;
+        AnvandareInfo anvandare;
         try {
             anvandare = anvandarHanterare.loggaIn(anvandarnamn, losenord);
         } catch (DatabasFel fel) {
@@ -50,6 +50,7 @@ public class LoggaInServlet extends HttpServlet {
             return;
         }
 
+        request.getSession().invalidate();
         HttpSession session = request.getSession();
         session.setAttribute("anvandare", anvandare);
 
