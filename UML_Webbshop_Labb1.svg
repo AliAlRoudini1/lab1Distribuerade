@@ -1,0 +1,428 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2161" height="1958" viewBox="0 0 2161 1958" font-family="DejaVu Sans, Verdana, Geneva, sans-serif">
+<rect width="2161" height="1958" fill="#ffffff"/>
+<text x="582" y="52" font-size="24" font-weight="bold" fill="#2b2f36">UML-klassdiagram – Webbshop (Labb 1)</text>
+<rect x="66" y="230" width="402" height="1055" rx="6" fill="#f4f8fe" stroke="#3d6fb6" stroke-width="1.6"/>
+<path d="M 66 230 L 66 206 Q 66 200 72 200 L 360.5 200 Q 366.5 200 366.5 206 L 366.5 230" fill="#f4f8fe" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="78" y="220" font-size="14" font-weight="bold" fill="#3d6fb6">se.labb1.ui</text>
+<text x="177.234375" y="220" font-size="12" fill="#4a505a">Presentationslager – servlets</text>
+<rect x="586" y="230" width="463" height="1073" rx="6" fill="#f3faf4" stroke="#3c8a50" stroke-width="1.6"/>
+<path d="M 586 230 L 586 206 Q 586 200 592 200 L 849.78125 200 Q 855.78125 200 855.78125 206 L 855.78125 230" fill="#f3faf4" stroke="#3c8a50" stroke-width="1.6"/>
+<text x="598" y="220" font-size="14" font-weight="bold" fill="#3c8a50">se.labb1.bo</text>
+<text x="702.109375" y="220" font-size="12" fill="#4a505a">Affärslogik – Hanterare</text>
+<rect x="1147" y="230" width="754" height="1024" rx="6" fill="#fdf5f3" stroke="#b5503d" stroke-width="1.6"/>
+<path d="M 1147 230 L 1147 206 Q 1147 200 1153 200 L 1375.609375 200 Q 1381.609375 200 1381.609375 206 L 1381.609375 230" fill="#fdf5f3" stroke="#b5503d" stroke-width="1.6"/>
+<text x="1159" y="220" font-size="14" font-weight="bold" fill="#b5503d">se.labb1.db</text>
+<text x="1263.5" y="220" font-size="12" fill="#4a505a">Datalager – JDBC</text>
+<rect x="40" y="1463" width="822" height="455" rx="6" fill="#f9f6fd" stroke="#7a55b0" stroke-width="1.6"/>
+<path d="M 40 1463 L 40 1439 Q 40 1433 46 1433 L 404.8125 1433 Q 410.8125 1433 410.8125 1439 L 410.8125 1463" fill="#f9f6fd" stroke="#7a55b0" stroke-width="1.6"/>
+<text x="52" y="1453" font-size="14" font-weight="bold" fill="#7a55b0">se.labb1.bo</text>
+<text x="156.109375" y="1453" font-size="12" fill="#4a505a">Info-klasser (DTO) – skickas till ui-lagret</text>
+<rect x="932" y="1463" width="798" height="455" rx="6" fill="#fefaf3" stroke="#b87a1f" stroke-width="1.6"/>
+<path d="M 932 1463 L 932 1439 Q 932 1433 938 1433 L 1138.6875 1433 Q 1144.6875 1433 1144.6875 1439 L 1144.6875 1463" fill="#fefaf3" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="944" y="1453" font-size="14" font-weight="bold" fill="#b87a1f">se.labb1.bo</text>
+<text x="1048.109375" y="1453" font-size="12" fill="#4a505a">Domänobjekt</text>
+<path d="M 120.0 278.0 L 94.0 278.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 120.0 411.0 L 94.0 411.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 120.0 574.0 L 94.0 574.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 120.0 805.0 L 94.0 805.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 120.0 951.0 L 94.0 951.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 120.0 1148.0 L 94.0 1148.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 94.0 1148.0 L 94.0 157.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 94.0 141.0 L 103.0 157.0 L 85.0 157.0 Z" fill="#fff" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 94.0 157.0 L 94.0 157.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 442.0 455.5 L 532.0 455.5 L 532.0 545.1 L 612.0 545.1" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 551.1 L 612.0 545.1 L 600.0 539.1" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 442.0 652.5 L 532.0 652.5 L 532.0 595.9 L 612.0 595.9" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 601.9 L 612.0 595.9 L 600.0 589.9" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 442.0 841.0 L 512.0 841.0 L 512.0 814.5 L 612.0 814.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 820.5 L 612.0 814.5 L 600.0 808.5" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 442.0 987.5 L 552.0 987.5 L 552.0 868.5 L 612.0 868.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 874.5 L 612.0 868.5 L 600.0 862.5" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 442.0 1037.5 L 512.0 1037.5 L 512.0 1158.7 L 612.0 1158.7" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 1164.7 L 612.0 1158.7 L 600.0 1152.7" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 442.0 1192.5 L 552.0 1192.5 L 552.0 1226.3 L 612.0 1226.3" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 600.0 1232.3 L 612.0 1226.3 L 600.0 1220.3" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1023.0 570.0 L 1173.0 570.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1161.0 576.0 L 1173.0 570.0 L 1161.0 564.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1023.0 841.0 L 1173.0 841.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1161.0 847.0 L 1173.0 841.0 L 1161.0 835.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1023.0 1192.5 L 1173.0 1192.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1161.0 1198.5 L 1173.0 1192.5 L 1161.0 1186.5" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1496.0 570.0 L 1546.0 570.0 L 1546.0 811.5 L 1646.0 811.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 1634.0 817.5 L 1646.0 811.5 L 1634.0 805.5" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1496.0 841.0 L 1646.0 841.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 1634.0 847.0 L 1646.0 841.0 L 1634.0 835.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1496.0 1192.5 L 1596.0 1192.5 L 1596.0 870.5 L 1646.0 870.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 1634.0 876.5 L 1646.0 870.5 L 1634.0 864.5" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1760.5 900.0 L 1760.5 988.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 1754.5 976.0 L 1760.5 988.0 L 1766.5 976.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1296.9609375 1123 L 1296.9609375 1157" stroke="#b9a64a" stroke-width="1.3" stroke-dasharray="3 3" fill="none"/>
+<path d="M 315.0 1785.0 L 405.0 1785.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 393.0 1791.0 L 405.0 1785.0 L 393.0 1779.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 315.0 1785.0 L 325.0 1791.0 L 335.0 1785.0 L 325.0 1779.0 Z" fill="#2b2f36" stroke="#2b2f36" stroke-width="1.2"/>
+<path d="M 575.0 1785.0 L 665.0 1785.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 653.0 1791.0 L 665.0 1785.0 L 653.0 1779.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1184.0 1785.0 L 1274.0 1785.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1262.0 1791.0 L 1274.0 1785.0 L 1262.0 1779.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1184.0 1785.0 L 1194.0 1791.0 L 1204.0 1785.0 L 1194.0 1779.0 Z" fill="#2b2f36" stroke="#2b2f36" stroke-width="1.2"/>
+<path d="M 1444.0 1785.0 L 1534.0 1785.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1522.0 1791.0 L 1534.0 1785.0 L 1522.0 1779.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1188.0 1557.0 L 1108.0 1557.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1120.0 1551.0 L 1108.0 1557.0 L 1120.0 1563.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 836.0 1557.0 L 958.0 1557.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 946.0 1563.0 L 958.0 1557.0 L 946.0 1551.0" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1659.0 1548.5 L 1739.0 1548.5" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linejoin="round"/>
+<path d="M 1739.0 1548.5 L 1723.0 1557.5 L 1723.0 1539.5 Z" fill="#fff" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 180.0 1285.0 L 180.0 1433.0" fill="none" stroke="#555c66" stroke-width="1.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 174.0 1421.0 L 180.0 1433.0 L 186.0 1421.0" fill="none" stroke="#555c66" stroke-width="1.6"/>
+<path d="M 666.0 1303.0 L 666.0 1433.0" fill="none" stroke="#555c66" stroke-width="1.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 660.0 1421.0 L 666.0 1433.0 L 672.0 1421.0" fill="none" stroke="#555c66" stroke-width="1.6"/>
+<path d="M 990.0 1303.0 L 990.0 1433.0" fill="none" stroke="#555c66" stroke-width="1.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 984.0 1421.0 L 990.0 1433.0 L 996.0 1421.0" fill="none" stroke="#555c66" stroke-width="1.6"/>
+<path d="M 1227.0 1254.0 L 1227.0 1433.0" fill="none" stroke="#555c66" stroke-width="1.5" stroke-dasharray="7 5" stroke-linejoin="round"/>
+<path d="M 1221.0 1421.0 L 1227.0 1433.0 L 1233.0 1421.0" fill="none" stroke="#555c66" stroke-width="1.6"/>
+<g class="cls">
+<rect x="40" y="96" width="150" height="45" rx="3" fill="#fff" stroke="#7b8390" stroke-width="1.6"/>
+<rect x="40" y="96" width="150" height="45" rx="3" fill="#eceef1" stroke="#7b8390" stroke-width="1.6"/>
+<text x="115.0" y="112" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">jakarta.servlet.http</text>
+<text x="115.0" y="131" text-anchor="middle" font-size="14" font-weight="bold" font-style="italic" fill="#2b2f36">HttpServlet</text>
+</g>
+<g class="cls">
+<rect x="120" y="256" width="322" height="103" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="256" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="272" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /loggaut</text>
+<text x="281.0" y="291" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">LoggaUtServlet</text>
+<line x1="120" y1="315" x2="442" y2="315" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="333" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="350" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+</g>
+<g class="cls">
+<rect x="120" y="389" width="322" height="133" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="389" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="405" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /loggain → login.jsp</text>
+<text x="281.0" y="424" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">LoggaInServlet</text>
+<line x1="120" y1="461" x2="442" y2="461" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="452" font-size="12" fill="#2b2f36">- anvandarHanterare : AnvandarHanterare</text>
+<text x="132" y="479" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="496" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+<text x="132" y="513" font-size="12" fill="#2b2f36">- visaInloggningssidan(req, resp) : void</text>
+</g>
+<g class="cls">
+<rect x="120" y="552" width="322" height="201" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="552" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="568" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /admin → admin.jsp</text>
+<text x="281.0" y="587" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">AdminServlet</text>
+<line x1="120" y1="624" x2="442" y2="624" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="615" font-size="12" fill="#2b2f36">- anvandarHanterare : AnvandarHanterare</text>
+<text x="132" y="642" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="659" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+<text x="132" y="676" font-size="12" fill="#2b2f36">- arAdmin(req, resp) : boolean</text>
+<text x="132" y="693" font-size="12" fill="#2b2f36">- laggTillAnvandare(req) : String</text>
+<text x="132" y="710" font-size="12" fill="#2b2f36">- andraRoll(req) : String</text>
+<text x="132" y="727" font-size="12" fill="#2b2f36">- taBortAnvandare(req) : String</text>
+<text x="132" y="744" font-size="12" fill="#2b2f36">- lasRoll(String) : Roll</text>
+</g>
+<g class="cls">
+<rect x="120" y="783" width="322" height="116" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="783" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="799" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /produkter → produkter.jsp</text>
+<text x="281.0" y="818" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">ProduktServlet</text>
+<line x1="120" y1="855" x2="442" y2="855" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="846" font-size="12" fill="#2b2f36">- produktHanterare : ProduktHanterare</text>
+<text x="132" y="873" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="890" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+</g>
+<g class="cls">
+<rect x="120" y="929" width="322" height="167" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="929" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="945" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /varukorg → varukorg.jsp</text>
+<text x="281.0" y="964" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">VarukorgServlet</text>
+<line x1="120" y1="1018" x2="442" y2="1018" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="992" font-size="12" fill="#2b2f36">- produktHanterare : ProduktHanterare</text>
+<text x="132" y="1009" font-size="12" fill="#2b2f36">- orderHanterare : OrderHanterare</text>
+<text x="132" y="1036" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="1053" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+<text x="132" y="1070" font-size="12" fill="#2b2f36">- hamtaVarukorgInfo(HttpSession) : VarukorgInfo</text>
+<text x="132" y="1087" font-size="12" fill="#2b2f36">- visaFelPaProduktsidan(req, resp, String) : void</text>
+</g>
+<g class="cls">
+<rect x="120" y="1126" width="322" height="133" rx="3" fill="#fff" stroke="#3d6fb6" stroke-width="1.6"/>
+<rect x="120" y="1126" width="322" height="45" rx="3" fill="#dbe8fb" stroke="#3d6fb6" stroke-width="1.6"/>
+<text x="281.0" y="1142" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«servlet»  /order → bekraftelse.jsp</text>
+<text x="281.0" y="1161" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">OrderServlet</text>
+<line x1="120" y1="1198" x2="442" y2="1198" stroke="#3d6fb6" stroke-width="1.2"/>
+<text x="132" y="1189" font-size="12" fill="#2b2f36">- orderHanterare : OrderHanterare</text>
+<text x="132" y="1216" font-size="12" fill="#2b2f36"># doGet(req, resp) : void</text>
+<text x="132" y="1233" font-size="12" fill="#2b2f36"># doPost(req, resp) : void</text>
+<text x="132" y="1250" font-size="12" fill="#2b2f36">- visaFelPaVarukorgssidan(req, resp, String) : void</text>
+</g>
+<g class="cls">
+<rect x="612" y="486" width="411" height="169" rx="3" fill="#fff" stroke="#3c8a50" stroke-width="1.6"/>
+<rect x="612" y="486" width="411" height="30" rx="3" fill="#d9f0de" stroke="#3c8a50" stroke-width="1.6"/>
+<text x="817.5" y="506" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">AnvandarHanterare</text>
+<line x1="612" y1="543" x2="1023" y2="543" stroke="#3c8a50" stroke-width="1.2"/>
+<text x="624" y="534" font-size="12" fill="#2b2f36">- anvandareDB : AnvandareDB</text>
+<text x="624" y="561" font-size="12" fill="#2b2f36">+ loggaIn(String, String) : AnvandareInfo</text>
+<text x="624" y="578" font-size="12" fill="#2b2f36">+ hamtaAllaAnvandare() : ArrayList&lt;AnvandareInfo&gt;</text>
+<text x="624" y="595" font-size="12" fill="#2b2f36">+ laggTillAnvandare(String, String, Roll) : void</text>
+<text x="624" y="612" font-size="12" fill="#2b2f36">+ andraRoll(int, Roll) : void</text>
+<text x="624" y="629" font-size="12" fill="#2b2f36">+ taBortAnvandare(int) : void</text>
+<text x="624" y="646" font-size="12" fill="#2b2f36">- skapaAnvandareInfo(Anvandare) : AnvandareInfo</text>
+</g>
+<g class="cls">
+<rect x="612" y="774" width="411" height="135" rx="3" fill="#fff" stroke="#3c8a50" stroke-width="1.6"/>
+<rect x="612" y="774" width="411" height="30" rx="3" fill="#d9f0de" stroke="#3c8a50" stroke-width="1.6"/>
+<text x="817.5" y="794" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">ProduktHanterare</text>
+<line x1="612" y1="831" x2="1023" y2="831" stroke="#3c8a50" stroke-width="1.2"/>
+<text x="624" y="822" font-size="12" fill="#2b2f36">- produktDB : ProduktDB</text>
+<text x="624" y="849" font-size="12" fill="#2b2f36">+ hamtaAllaProdukter() : ArrayList&lt;ProduktInfo&gt;</text>
+<text x="624" y="866" font-size="12" fill="#2b2f36">+ hamtaProdukt(int) : ProduktInfo</text>
+<text x="624" y="883" font-size="12" fill="#2b2f36">+ fyllPaLager(AnvandareInfo, int, int) : String</text>
+<text x="624" y="900" font-size="12" fill="#2b2f36">- skapaProduktInfo(Produkt) : ProduktInfo</text>
+</g>
+<g class="cls">
+<rect x="612" y="1108" width="411" height="169" rx="3" fill="#fff" stroke="#3c8a50" stroke-width="1.6"/>
+<rect x="612" y="1108" width="411" height="30" rx="3" fill="#d9f0de" stroke="#3c8a50" stroke-width="1.6"/>
+<text x="817.5" y="1128" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">OrderHanterare</text>
+<line x1="612" y1="1165" x2="1023" y2="1165" stroke="#3c8a50" stroke-width="1.2"/>
+<text x="624" y="1156" font-size="12" fill="#2b2f36">- orderDB : OrderDB</text>
+<text x="624" y="1183" font-size="12" fill="#2b2f36">+ skapaTomVarukorg() : VarukorgInfo</text>
+<text x="624" y="1200" font-size="12" fill="#2b2f36">+ laggTillIVarukorg(VarukorgInfo, ProduktInfo, int) : VarukorgInfo</text>
+<text x="624" y="1217" font-size="12" fill="#2b2f36">+ skickaOrder(AnvandareInfo, VarukorgInfo) : int</text>
+<text x="624" y="1234" font-size="12" fill="#2b2f36">- skapaVarukorg(VarukorgInfo) : Varukorg</text>
+<text x="624" y="1251" font-size="12" fill="#2b2f36">- skapaVarukorgInfo(Varukorg) : VarukorgInfo</text>
+<text x="624" y="1268" font-size="12" fill="#2b2f36">- skapaProdukt(ProduktInfo) : Produkt</text>
+</g>
+<g class="cls">
+<rect x="1173" y="492" width="323" height="156" rx="3" fill="#fff" stroke="#b5503d" stroke-width="1.6"/>
+<rect x="1173" y="492" width="323" height="30" rx="3" fill="#f9dcd6" stroke="#b5503d" stroke-width="1.6"/>
+<text x="1334.5" y="512" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">AnvandareDB</text>
+<line x1="1173" y1="536" x2="1496" y2="536" stroke="#b5503d" stroke-width="1.2"/>
+<text x="1185" y="554" font-size="12" fill="#2b2f36">+ hittaAnvandare(String, String) : Anvandare</text>
+<text x="1185" y="571" font-size="12" fill="#2b2f36">+ hamtaAllaAnvandare() : ArrayList&lt;Anvandare&gt;</text>
+<text x="1185" y="588" font-size="12" fill="#2b2f36">+ laggTillAnvandare(String, String, Roll) : void</text>
+<text x="1185" y="605" font-size="12" fill="#2b2f36">+ andraRoll(int, Roll) : void</text>
+<text x="1185" y="622" font-size="12" fill="#2b2f36">+ taBortAnvandare(int) : void</text>
+<text x="1185" y="639" font-size="12" fill="#2b2f36">- skapaAnvandare(ResultSet) : Anvandare</text>
+</g>
+<g class="cls">
+<rect x="1173" y="780" width="323" height="122" rx="3" fill="#fff" stroke="#b5503d" stroke-width="1.6"/>
+<rect x="1173" y="780" width="323" height="30" rx="3" fill="#f9dcd6" stroke="#b5503d" stroke-width="1.6"/>
+<text x="1334.5" y="800" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">ProduktDB</text>
+<line x1="1173" y1="824" x2="1496" y2="824" stroke="#b5503d" stroke-width="1.2"/>
+<text x="1185" y="842" font-size="12" fill="#2b2f36">+ hamtaAllaProdukter() : ArrayList&lt;Produkt&gt;</text>
+<text x="1185" y="859" font-size="12" fill="#2b2f36">+ hamtaProdukt(int) : Produkt</text>
+<text x="1185" y="876" font-size="12" fill="#2b2f36">+ fyllPaLager(int, int) : boolean</text>
+<text x="1185" y="893" font-size="12" fill="#2b2f36">- skapaProdukt(ResultSet) : Produkt</text>
+</g>
+<g class="cls">
+<rect x="1173" y="1157" width="323" height="71" rx="3" fill="#fff" stroke="#b5503d" stroke-width="1.6"/>
+<rect x="1173" y="1157" width="323" height="30" rx="3" fill="#f9dcd6" stroke="#b5503d" stroke-width="1.6"/>
+<text x="1334.5" y="1177" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">OrderDB</text>
+<line x1="1173" y1="1201" x2="1496" y2="1201" stroke="#b5503d" stroke-width="1.2"/>
+<text x="1185" y="1219" font-size="12" fill="#2b2f36">+ skapaOrder(int, Varukorg) : int</text>
+</g>
+<g class="cls">
+<rect x="1646" y="782" width="229" height="118" rx="3" fill="#fff" stroke="#b5503d" stroke-width="1.6"/>
+<rect x="1646" y="782" width="229" height="30" rx="3" fill="#f9dcd6" stroke="#b5503d" stroke-width="1.6"/>
+<text x="1760.5" y="802" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">DatabasAnslutning</text>
+<line x1="1646" y1="873" x2="1875" y2="873" stroke="#b5503d" stroke-width="1.2"/>
+<text x="1658" y="830" font-size="12" fill="#2b2f36" text-decoration="underline">- URL : String</text>
+<text x="1658" y="847" font-size="12" fill="#2b2f36" text-decoration="underline">- ANVANDARE : String</text>
+<text x="1658" y="864" font-size="12" fill="#2b2f36" text-decoration="underline">- LOSENORD : String</text>
+<text x="1658" y="891" font-size="12" fill="#2b2f36" text-decoration="underline">+ hamtaAnslutning() : Connection</text>
+</g>
+<g class="cls">
+<rect x="665" y="1505" width="171" height="150" rx="3" fill="#fff" stroke="#7a55b0" stroke-width="1.6"/>
+<rect x="665" y="1505" width="171" height="45" rx="3" fill="#ece3f8" stroke="#7a55b0" stroke-width="1.6"/>
+<text x="750.5" y="1521" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«DTO»</text>
+<text x="750.5" y="1540" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">AnvandareInfo</text>
+<line x1="665" y1="1628" x2="836" y2="1628" stroke="#7a55b0" stroke-width="1.2"/>
+<text x="677" y="1568" font-size="12" fill="#2b2f36">- id : int</text>
+<text x="677" y="1585" font-size="12" fill="#2b2f36">- anvandarnamn : String</text>
+<text x="677" y="1602" font-size="12" fill="#2b2f36">- roll : Roll</text>
+<text x="677" y="1619" font-size="12" fill="#2b2f36">- admin : boolean</text>
+<text x="677" y="1646" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="66" y="1725" width="249" height="150" rx="3" fill="#fff" stroke="#7a55b0" stroke-width="1.6"/>
+<rect x="66" y="1725" width="249" height="45" rx="3" fill="#ece3f8" stroke="#7a55b0" stroke-width="1.6"/>
+<text x="190.5" y="1741" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«DTO»</text>
+<text x="190.5" y="1760" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">VarukorgInfo</text>
+<line x1="66" y1="1848" x2="315" y2="1848" stroke="#7a55b0" stroke-width="1.2"/>
+<text x="78" y="1788" font-size="12" fill="#2b2f36">- rader : ArrayList&lt;VarukorgRadInfo&gt;</text>
+<text x="78" y="1805" font-size="12" fill="#2b2f36">- totalSumma : int</text>
+<text x="78" y="1822" font-size="12" fill="#2b2f36">- antalVaror : int</text>
+<text x="78" y="1839" font-size="12" fill="#2b2f36">- tom : boolean</text>
+<text x="78" y="1866" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="405" y="1725" width="170" height="133" rx="3" fill="#fff" stroke="#7a55b0" stroke-width="1.6"/>
+<rect x="405" y="1725" width="170" height="45" rx="3" fill="#ece3f8" stroke="#7a55b0" stroke-width="1.6"/>
+<text x="490.0" y="1741" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«DTO»</text>
+<text x="490.0" y="1760" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">VarukorgRadInfo</text>
+<line x1="405" y1="1831" x2="575" y2="1831" stroke="#7a55b0" stroke-width="1.2"/>
+<text x="417" y="1788" font-size="12" fill="#2b2f36">- produkt : ProduktInfo</text>
+<text x="417" y="1805" font-size="12" fill="#2b2f36">- antal : int</text>
+<text x="417" y="1822" font-size="12" fill="#2b2f36">- radSumma : int</text>
+<text x="417" y="1849" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="665" y="1725" width="171" height="167" rx="3" fill="#fff" stroke="#7a55b0" stroke-width="1.6"/>
+<rect x="665" y="1725" width="171" height="45" rx="3" fill="#ece3f8" stroke="#7a55b0" stroke-width="1.6"/>
+<text x="750.5" y="1741" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«DTO»</text>
+<text x="750.5" y="1760" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">ProduktInfo</text>
+<line x1="665" y1="1865" x2="836" y2="1865" stroke="#7a55b0" stroke-width="1.2"/>
+<text x="677" y="1788" font-size="12" fill="#2b2f36">- id : int</text>
+<text x="677" y="1805" font-size="12" fill="#2b2f36">- namn : String</text>
+<text x="677" y="1822" font-size="12" fill="#2b2f36">- beskrivning : String</text>
+<text x="677" y="1839" font-size="12" fill="#2b2f36">- pris : int</text>
+<text x="677" y="1856" font-size="12" fill="#2b2f36">- lagerAntal : int</text>
+<text x="677" y="1883" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="958" y="1505" width="150" height="120" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="958" y="1505" width="150" height="45" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1033.0" y="1521" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«enumeration»</text>
+<text x="1033.0" y="1540" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">Roll</text>
+<line x1="958" y1="1611" x2="1108" y2="1611" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="970" y="1568" font-size="12" fill="#2b2f36">KUND</text>
+<text x="970" y="1585" font-size="12" fill="#2b2f36">ADMIN</text>
+<text x="970" y="1602" font-size="12" fill="#2b2f36">LAGER</text>
+</g>
+<g class="cls">
+<rect x="1188" y="1505" width="171" height="135" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="1188" y="1505" width="171" height="30" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1273.5" y="1525" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">Anvandare</text>
+<line x1="1188" y1="1596" x2="1359" y2="1596" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="1200" y="1553" font-size="12" fill="#2b2f36">- id : int</text>
+<text x="1200" y="1570" font-size="12" fill="#2b2f36">- anvandarnamn : String</text>
+<text x="1200" y="1587" font-size="12" fill="#2b2f36">- roll : Roll</text>
+<text x="1200" y="1614" font-size="12" fill="#2b2f36">+ isAdmin() : boolean</text>
+<text x="1200" y="1631" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="1439" y="1505" width="220" height="86" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="1439" y="1505" width="220" height="45" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1549.0" y="1521" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">«exception»</text>
+<text x="1549.0" y="1540" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">DatabasFel</text>
+<line x1="1439" y1="1564" x2="1659" y2="1564" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="1451" y="1582" font-size="12" fill="#2b2f36">+ DatabasFel(String, Throwable)</text>
+</g>
+<g class="cls">
+<rect x="1739" y="1526" width="130" height="45" rx="3" fill="#fff" stroke="#7b8390" stroke-width="1.6"/>
+<rect x="1739" y="1526" width="130" height="45" rx="3" fill="#eceef1" stroke="#7b8390" stroke-width="1.6"/>
+<text x="1804.0" y="1542" text-anchor="middle" font-size="11" font-style="italic" fill="#4a505a">java.lang</text>
+<text x="1804.0" y="1561" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">Exception</text>
+</g>
+<g class="cls">
+<rect x="958" y="1725" width="226" height="152" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="958" y="1725" width="226" height="30" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1071.0" y="1745" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">Varukorg</text>
+<line x1="958" y1="1782" x2="1184" y2="1782" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="970" y="1773" font-size="12" fill="#2b2f36">- rader : ArrayList&lt;VarukorgRad&gt;</text>
+<text x="970" y="1800" font-size="12" fill="#2b2f36">+ laggTill(Produkt, int) : boolean</text>
+<text x="970" y="1817" font-size="12" fill="#2b2f36">+ laggTillRad(Produkt, int) : void</text>
+<text x="970" y="1834" font-size="12" fill="#2b2f36">+ getTotalSumma() : int</text>
+<text x="970" y="1851" font-size="12" fill="#2b2f36">+ getAntalVaror() : int</text>
+<text x="970" y="1868" font-size="12" fill="#2b2f36">+ isTom() : boolean</text>
+</g>
+<g class="cls">
+<rect x="1274" y="1725" width="170" height="135" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="1274" y="1725" width="170" height="30" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1359.0" y="1745" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">VarukorgRad</text>
+<line x1="1274" y1="1799" x2="1444" y2="1799" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="1286" y="1773" font-size="12" fill="#2b2f36">- produkt : Produkt</text>
+<text x="1286" y="1790" font-size="12" fill="#2b2f36">- antal : int</text>
+<text x="1286" y="1817" font-size="12" fill="#2b2f36">+ setAntal(int) : void</text>
+<text x="1286" y="1834" font-size="12" fill="#2b2f36">+ getRadSumma() : int</text>
+<text x="1286" y="1851" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<g class="cls">
+<rect x="1534" y="1725" width="170" height="152" rx="3" fill="#fff" stroke="#b87a1f" stroke-width="1.6"/>
+<rect x="1534" y="1725" width="170" height="30" rx="3" fill="#fbe9cf" stroke="#b87a1f" stroke-width="1.6"/>
+<text x="1619.0" y="1745" text-anchor="middle" font-size="14" font-weight="bold" fill="#2b2f36">Produkt</text>
+<line x1="1534" y1="1850" x2="1704" y2="1850" stroke="#b87a1f" stroke-width="1.2"/>
+<text x="1546" y="1773" font-size="12" fill="#2b2f36">- id : int</text>
+<text x="1546" y="1790" font-size="12" fill="#2b2f36">- namn : String</text>
+<text x="1546" y="1807" font-size="12" fill="#2b2f36">- beskrivning : String</text>
+<text x="1546" y="1824" font-size="12" fill="#2b2f36">- pris : int</text>
+<text x="1546" y="1841" font-size="12" fill="#2b2f36">- lagerAntal : int</text>
+<text x="1546" y="1868" font-size="12" fill="#7b8390" font-style="italic">get…() för alla attribut</text>
+</g>
+<path d="M 1666 1000 L 1666 1072 A 94.5 10 0 0 0 1855 1072 L 1855 1000" fill="#fff" stroke="#7b8390" stroke-width="1.6"/>
+<ellipse cx="1760.5" cy="1000" rx="94.5" ry="10" fill="#eceef1" stroke="#7b8390" stroke-width="1.6"/>
+<text x="1760.5" y="1030" text-anchor="middle" font-size="13" font-weight="bold" fill="#2b2f36">MySQL: webbshop</text>
+<text x="1760.5" y="1048" text-anchor="middle" font-size="11" fill="#4a505a">anvandare · produkt</text>
+<text x="1760.5" y="1063" text-anchor="middle" font-size="11" fill="#4a505a">ordrar · orderrader</text>
+<path d="M 1173 1059 L 1408.921875 1059 L 1420.921875 1071 L 1420.921875 1123 L 1173 1123 Z" fill="#fffbe6" stroke="#b9a64a" stroke-width="1.3"/>
+<path d="M 1408.921875 1059 L 1408.921875 1071 L 1420.921875 1071" fill="none" stroke="#b9a64a" stroke-width="1.3"/>
+<text x="1185" y="1080" font-size="11.5" fill="#2b2f36">Transaktion: setAutoCommit(false)</text>
+<text x="1185" y="1096" font-size="11.5" fill="#2b2f36">order + orderrader + lagerminskning</text>
+<text x="1185" y="1112" font-size="11.5" fill="#2b2f36">→ commit(), annars rollback()</text>
+<line x1="806" y1="1505" x2="806" y2="1489" stroke="#7a55b0" stroke-width="1.5"/>
+<circle cx="806" cy="1483" r="6" fill="#fff" stroke="#7a55b0" stroke-width="1.5"/>
+<text x="796" y="1487" text-anchor="end" font-size="10.5" font-style="italic" fill="#5b4a80">Serializable</text>
+<line x1="285" y1="1725" x2="285" y2="1709" stroke="#7a55b0" stroke-width="1.5"/>
+<circle cx="285" cy="1703" r="6" fill="#fff" stroke="#7a55b0" stroke-width="1.5"/>
+<text x="275" y="1707" text-anchor="end" font-size="10.5" font-style="italic" fill="#5b4a80">Serializable</text>
+<line x1="545" y1="1725" x2="545" y2="1709" stroke="#7a55b0" stroke-width="1.5"/>
+<circle cx="545" cy="1703" r="6" fill="#fff" stroke="#7a55b0" stroke-width="1.5"/>
+<text x="535" y="1707" text-anchor="end" font-size="10.5" font-style="italic" fill="#5b4a80">Serializable</text>
+<line x1="806" y1="1725" x2="806" y2="1709" stroke="#7a55b0" stroke-width="1.5"/>
+<circle cx="806" cy="1703" r="6" fill="#fff" stroke="#7a55b0" stroke-width="1.5"/>
+<text x="796" y="1707" text-anchor="end" font-size="10.5" font-style="italic" fill="#5b4a80">Serializable</text>
+<text x="594.0" y="539.1" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="449.5" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="594.0" y="589.9" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="646.5" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="594.0" y="808.5" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="835.0" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="594.0" y="862.5" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="981.5" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="594.0" y="1152.7" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="1031.5" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="594.0" y="1220.3" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="450.0" y="1186.5" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round"></text>
+<text x="1155.0" y="564.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1155.0" y="835.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1155.0" y="1186.5" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1760.5" y="772.0" text-anchor="middle" font-size="11" font-style="italic" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«använder» (statisk metod)</text>
+<text x="1768.5" y="949.0" text-anchor="start" font-size="11" font-style="italic" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">JDBC</text>
+<text x="395.0" y="1778.0" text-anchor="end" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">rader</text>
+<text x="395.0" y="1801.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">0..*</text>
+<text x="341.0" y="1801.0" text-anchor="start" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="655.0" y="1778.0" text-anchor="end" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">produkt</text>
+<text x="655.0" y="1801.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1264.0" y="1778.0" text-anchor="end" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">rader</text>
+<text x="1264.0" y="1801.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">0..*</text>
+<text x="1210.0" y="1801.0" text-anchor="start" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1524.0" y="1778.0" text-anchor="end" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">produkt</text>
+<text x="1524.0" y="1801.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="1118.0" y="1550.0" text-anchor="start" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">roll</text>
+<text x="1118.0" y="1573.0" text-anchor="start" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="948.0" y="1550.0" text-anchor="end" font-size="11" font-style="italic" fill="#4a505a" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">roll</text>
+<text x="948.0" y="1573.0" text-anchor="end" font-size="11.5" fill="#2b2f36" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">1</text>
+<text x="190.0" y="1311.0" text-anchor="start" font-size="11.5" font-style="italic" fill="#3b4048" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«använder» Info-objekt (sparas i sessionen)</text>
+<text x="676.0" y="1365.0" text-anchor="start" font-size="11.5" font-style="italic" fill="#3b4048" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«skapar» Info-objekt</text>
+<text x="1000.0" y="1365.0" text-anchor="start" font-size="11.5" font-style="italic" fill="#3b4048" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«använder» domänobjekt</text>
+<text x="1237.0" y="1304.0" text-anchor="start" font-size="11.5" font-style="italic" fill="#3b4048" stroke="#fff" stroke-width="4" paint-order="stroke" stroke-linejoin="round">«skapar / läser» Anvandare, Produkt, Varukorg</text>
+<rect x="1691" y="30" width="430" height="150" rx="6" fill="#fff" stroke="#c4c9d0"/>
+<text x="1705" y="52" font-size="12.5" font-weight="bold" fill="#2b2f36">Teckenförklaring</text>
+<path d="M 1707 76 L 1777 76" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1765 70 L 1777 76 L 1765 82" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<text x="1791" y="80" font-size="11.5" fill="#2b2f36">Association – klassen har ett fält av typen</text>
+<path d="M 1707 97 L 1777 97" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1707 97 L 1717 91 L 1727 97 L 1717 103 Z" fill="#2b2f36"/>
+<path d="M 1765 91 L 1777 97 L 1765 103" fill="none" stroke="#2b2f36" stroke-width="1.6"/>
+<text x="1791" y="101" font-size="11.5" fill="#2b2f36">Komposition – helheten äger sina delar</text>
+<path d="M 1707 118 L 1761 118" stroke="#2b2f36" stroke-width="1.6"/>
+<path d="M 1777 118 L 1761 110 L 1761 126 Z" fill="#fff" stroke="#2b2f36" stroke-width="1.6"/>
+<text x="1791" y="122" font-size="11.5" fill="#2b2f36">Arv (extends)</text>
+<path d="M 1707 139 L 1777 139" stroke="#555c66" stroke-width="1.5" stroke-dasharray="7 5"/>
+<path d="M 1765 133 L 1777 139 L 1765 145" fill="none" stroke="#555c66" stroke-width="1.6"/>
+<text x="1791" y="143" font-size="11.5" fill="#2b2f36">Beroende – skapar/använder/anropar</text>
+<path d="M 1727 160 L 1753 160" stroke="#7a55b0" stroke-width="1.5"/>
+<circle cx="1759" cy="160" r="6" fill="#fff" stroke="#7a55b0" stroke-width="1.5"/>
+<text x="1791" y="164" font-size="11.5" fill="#2b2f36">Implementerar gränssnittet Serializable</text>
+</svg>
